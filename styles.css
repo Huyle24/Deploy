@@ -1,0 +1,275 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: helvetica,arial,sans-serif ;
+}
+/* vị trí ,kích thước, màu sắc, kiểu dáng */
+/* ngoài vào trong, trên xuống dưới, tổgn quan đến chi tiết */
+#main{
+
+}
+.clear{
+    clear:both;
+}
+#header{
+    height: 46px;
+    background-color: black;
+    /* header thành thanh cuộc cố đinh */
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+
+}
+#nav{
+    display: inline-block;
+}
+/* đưa li lên 1 hàng  */
+#nav li{
+     display: inline-block;
+    position: ralative;
+    
+   
+}
+#header .search-btn{
+    float:right;
+    color: white;
+    display: inline-block;
+    text-decoration:none;
+    line-height: 46px;
+    padding: 0 24px;
+    /* đổi trỏ chuột thành bàn tay */
+    cursor:pointer ;
+
+}
+
+#header .search-btn:hover  {
+    background-color: red;
+
+}
+#nav li a{
+    
+    text-decoration:none;
+    line-height: 46px;
+    padding: 0 24px;
+    /* bôi đen nguyên tảng */
+     display: inline-block;  
+    width: 100%;
+
+    
+}
+
+#nav > li>a {
+    color:white;
+    text-transform: uppercase;
+}
+/* thao tác nhấn  */
+#nav .sub li:hover a, #nav > li:hover> a{
+    color: black;
+    background-color: #ccc;
+
+}
+
+#nav .sub{
+    display: none ;
+    position: absolute;
+   
+    background-color: white ;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    
+   
+}
+#nav  li:hover .sub{
+    display:block;
+    display:grid;
+}
+#nav .sub a { 
+    color: black;
+    padding: 0 12px;
+   
+
+
+}
+#nav, #sub {
+    list-style-type: none;
+}
+
+#slider{
+    background-color: white;
+    min-height: 500px;
+    /* vì thanh header 46px, nên margin=46 để đẩy nó xuống */
+    margin-top: 46px;
+    /* 50% chiều ngang của chính nó */
+    padding-top: 64px 16px;
+    background: url(./img/band1.jpg) top center / cover no-repeat;
+    position: relative;
+
+}
+#slider .tieude {
+     position:absolute;
+     color: white;
+     bottom:0;
+     /* căn giữa */
+     /* left: 50%;
+     transform: stranslateX(-50%);*/
+     text-align: center;
+     width:100%;
+}
+#footer{
+
+}
+
+#content{
+
+}
+#tieude{
+    
+
+}
+.tieude .tieude1{ 
+    margin-bottom:25px ;
+
+}
+.tieude .tieude2{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+#content .band{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 ;
+    float: center;
+    width: 900px;
+
+
+}
+#content .band .theband{
+    margin: 20px 0 ;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+#content .band .slogan{
+    margin: 20px 0;
+    /* Làm mờ chữ */
+    Opacity: 0.6;
+
+
+}
+#content .band .wehave{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* căn đều chữ 2 bên */
+    text-align: justify!important;
+   
+}
+#content  .member{
+    float:center;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#content .member .member1{
+    width: 300px;
+    float:left;
+
+}
+#content .member .member2{
+    width: 300px;
+    float:left;
+}
+#content .member .member3{
+    width: 300px;
+    float:left;
+
+}
+#content .band .member .img{
+    border-radius: 6px;
+    width: 153px;
+    margin-bottom: 16px;
+    
+}
+#content .band .member .name{
+    font-size: 15px;
+    margin:16px 0 ;
+
+}
+
+
+#content .tour{
+    
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 64px 0 ;
+        width: 900px; 
+    
+}
+#content .tour .tourdate{
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin: 20px 0 ;
+    padding-top: 25px;
+   
+}
+#content .tour .slogan{
+    opacity: 0.6;
+    margin: 20px 0 ;
+
+}
+#content .tour  .table{
+    text-align: left;
+    background-color: white;
+    color: grey;
+    display: block;
+    width: 900px;
+    
+
+   
+}
+#content .tour  .table li {
+    padding:5px;
+    list-style-type: none;
+    line-height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.tourcolor{
+    background-color: black;
+    color:white;
+}
+.soldout{
+    background-color: red;
+    padding:5px;
+    color:white;
+    margin-left: 5px;
+}
+.three{
+    background-color: black;
+    float:right;
+    border-radius: 50%;
+    color:white;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin-right: 15px;
+}
+#content .about{
+
+}
+#content .contact{
+
+}
